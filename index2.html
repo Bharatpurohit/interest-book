@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>2nd Desing</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="index2.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css
+">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add Customer</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Customer Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Customer Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Customer Address</label>
+                        </div>
+
+                        <!-- <input class="form-control form-control-lg m-2" type="text" placeholder="Customer Name"
+                            aria-label=".form-control-lg example">
+                        <input class="form-control form-control-lg m-2" type="text" placeholder="Customer Email"
+                            aria-label=".form-control-lg example">
+                        <input class="form-control form-control-lg m-2" type="text" placeholder="Customer Address"
+                            aria-label=".form-control-lg example"> -->
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Customer Photos</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row bg-light p-3">
+                <div class="col"></div>
+                <div class="col-8">
+                    <span class="m-2">Interest Book</span>
+                    <span><a href="index.html" class="text-decoration-none m-2 text-dark">Home</a></span>
+                    <span><a href="index2.html" class="text-decoration-none text-dark">2<sup>nd</sup>Desing</a></span>
+                    <hr>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row bg-light m-auto content mb-3">
+                <div class="col col-lg-6 border-end text-center">
+                    <span class="text-danger d-block m-1">Rs 100000</span>
+                    <i>You Gave</i>
+                </div>
+                <div class="col col-lg-6 text-center">
+                    <span class="text-success d-block m-1">Rs 100000</span>
+                    <i>You Got</i>
+                </div>
+            </div>
+            <div class="row content m-auto">
+                <table id="example" class="table table-bordered " style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Img</th>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th>Interest Value</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-white">
+                        <tr class="bg-danger">
+                            <td> <img src="../th.jpeg" class="icon" alt=""></td>
+                            <td>Bharat</td>
+                            <td>10000</td>
+                            <td>1000</td>
+                            <td>23-03-1987 02:02:22 Am</td>
+                            <td></td>
+                        </tr>
+                        <tr class="bg-success">
+                            <td> <img src="../th.jpeg" class="icon" alt=""></td>
+                            <td>Dhruvisha</td>
+                            <td>20000</td>
+                            <td>2500</td>
+                            <td>23-03-1987 02:02:22 Am</td>
+                            <td></td>
+                        </tr>
+                        <tr class="bg-success">
+                            <td> <img src="../th.jpeg" class="icon" alt=""></td>
+                            <td>Niraj</td>
+                            <td>90000</td>
+                            <td>10000</td>
+                            <td>23-03-1987 02:02:22 Am</td>
+                            <td></td>
+                        </tr>
+                        <tr class="bg-danger">
+                            <td> <img src="../th.jpeg" class="icon" alt=""></td>
+                            <td>Mittal</td>
+                            <td>45000</td>
+                            <td>4500</td>
+                            <td>23-03-1987 02:02:22 Am</td>
+                            <td></td>
+                        </tr>
+                        <tr class="bg-success">
+                            <td> <img src="../th.jpeg" class="icon" alt=""></td>
+                            <td>Krishna</td>
+                            <td>32000</td>
+                            <td>3500</td>
+                            <td>23-03-1987 02:02:22 Am</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <button class="btn btn-primary rounded-circle add_icon " data-bs-toggle="modal"
+                data-bs-target="#exampleModal"><i class=" fa-solid fa-user-plus "></i></button>
+        </div>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+            </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+            </script>
+
+        <script src=" https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#example').DataTable();
+            });
+        </script>
+    </body>
+
+</html>
